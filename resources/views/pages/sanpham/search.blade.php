@@ -15,6 +15,7 @@
                             <input type="hidden" value="{{ $value->image}}" class="cart_product_image_{{$value->id}}">
                             <input type="hidden" value="{{ $value->price}}" class="cart_product_price_{{$value->id}}">
                             <input type="hidden" value="1" class="cart_product_qty_{{$value->id}}">
+                            <input type="hidden" value="{{ $value->quantity}}" class="cart_product_storage_{{$value->id}}">
 
                             <h2>{{ currency_format($value->price)}}</h2>
                             <p>{{ $value->name }}</p>

@@ -751,7 +751,7 @@
         var cart_product_qty = $('.cart_product_qty_'+id).val();
         var quantity_storage = $('.cart_product_storage_'+id).val();
         var token = $('input[name="_token"]').val();
-
+        alert(quantity_storage);
 
         if (parseInt(quantity_storage)>parseInt(cart_product_qty)) {
             $.ajax({
